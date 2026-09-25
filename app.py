@@ -1230,7 +1230,7 @@ div[data-testid="stDataFrame"] { border: 1px solid rgba(16,24,40,.06); border-ra
 }
 </style>
 """.replace("SEARCH_SVG", search_svg)
-    st.markdown(css, unsafe_allow_html=True)
+    st.markdown(_clean(css), unsafe_allow_html=True)
 
 # ------------------------------------------------------------------------------------------------ components
 def render_navigation(mkt_open, now_et):
