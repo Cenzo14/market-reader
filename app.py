@@ -1001,7 +1001,7 @@ def inject_global_css():
 :root { --bg:#F7F9FC; --text:#101828; --text2:#667085; --muted:#98A2B3; --blue:#2563EB; --blue-l:#EAF2FF; --up:#12B76A; --up-d:#067647; --up-bg:#ECFDF3;
   --down:#F04438; --down-d:#B42318; --down-bg:#FEF3F2; --warn:#F79009; --warn-d:#B54708; --warn-bg:#FFFAEB; --navy:#0B1B3F; --border:rgba(16,24,40,0.07);
   --font: Inter, "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-html, body, .stApp, .stApp p, .stApp span, .stApp div, .stApp label, .stApp input, .stApp textarea, .stApp button { font-family: var(--font); }
+html, body, .stApp, .stApp p, .stApp label, .stApp input, .stApp textarea, .stApp button { font-family: var(--font); }
 .stApp { color: var(--text); overflow-x: hidden;
   background: radial-gradient(1100px 540px at 90% -10%, #E6F0FF 0%, rgba(247,249,252,0) 62%),
               radial-gradient(900px 520px at -8% 38%, #F0F5FF 0%, rgba(247,249,252,0) 58%), var(--bg); }
@@ -1055,7 +1055,7 @@ a { color: var(--blue); }
   transition: transform .18s ease, box-shadow .18s ease; }
 .stButton > button:hover, .stDownloadButton > button:hover { color: #fff; transform: translateY(-1px); box-shadow: 0 10px 24px rgba(11,27,63,.2); }
 .stButton > button:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
-/* ---------- tabs (SaaS underline navigation) */
+/* ---------- tabs (SaaS underline navigation) */ .mr-nav a { text-decoration: none !important; } .mr-brand { color: var(--text) !important; } .stTabs [role="tablist"] { gap: 30px; border-bottom: 1px solid var(--border); overflow-x: auto; flex-wrap: nowrap; scrollbar-width: none; } .stTabs [data-testid="stTab"] p { font-size: 14.5px !important; font-weight: 500 !important; color: var(--muted) !important; white-space: nowrap; } .stTabs [data-testid="stTab"][aria-selected="true"] p { color: var(--text) !important; font-weight: 600 !important; } .stTabs .react-aria-SelectionIndicator { background-color: var(--blue) !important; height: 2px !important; }
 .stTabs [data-baseweb="tab-list"] { gap: 30px; border-bottom: 1px solid var(--border); background: transparent; overflow-x: auto; scrollbar-width: none; flex-wrap: nowrap; }
 .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar { display: none; }
 .stTabs [data-baseweb="tab"] { height: 46px; padding: 0 !important; background: transparent !important; white-space: nowrap; }
